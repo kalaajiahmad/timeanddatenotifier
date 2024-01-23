@@ -61,7 +61,7 @@ function updateDateTime() {
     // Update time and date
     // timeElement.textContent = now.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
     timeElement.textContent = timeString;
-    dateElement.textContent = now.toLocaleDateString('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    dateElement.textContent = now.toLocaleDateString('ar-lb', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
     // Update day/night cycle
     const hour = now.getHours();
