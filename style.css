@@ -1,0 +1,211 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: background-color 0.5s;
+}
+
+/* ... other styles ... */
+
+#date, #time {
+    text-align: center;
+}
+
+#date {
+    font-size: 5vw; /* Adjust font size */
+    margin: 0px;
+}
+
+#time {
+    font-size: 25vw; /* Adjust font size */
+    margin: 0px;
+}
+
+#dayCycleContainer {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    margin-top: 0vw; /* Adjust as needed */
+}
+
+#dayCycle {
+    width: 20vw; /* Adjust width */
+    height: 20vw; /* Adjust height */
+    border-radius: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    margin-right: 5vw;
+}
+
+#dayCycleText {
+    font-size: 15vw; /* Adjust the font size */
+}
+
+/* Responsive adjustments */
+@media (min-width: 1024px) {
+    #date {
+        font-size: 5vw; /* Smaller relative size for large screens */
+        margin-top: 5px;
+    }
+    #time {
+        font-size: 15vw; /* Smaller relative size for large screens */
+    }
+    #dayCycleText {
+        font-size: 5vw; /* Smaller relative size for large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #date {
+        font-size: 5vw;
+    }
+    #time {
+        font-size: 20vw;
+    }
+    #dayCycleContainer {
+        flex-direction: column; /* Stack them vertically on smaller screens */
+    }
+    #dayCycle {
+        margin-bottom: 2vw; /* Space between image and text when stacked */
+        margin-right: 0;
+    }
+    #dayCycleText {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #date {
+        font-size: 7vw;
+    }
+    #time {
+        font-size: 25vw;
+    }
+    #dayCycle {
+        width: 30vw;
+        height: 30vw;
+        bottom: 30vw;
+    }
+    #dayCycleText {
+        font-size: 10vw;
+    }
+}
+
+/* ... other styles ... */
+
+#dashboard.sunrise, #dashboard.fajr, #dashboard.sobo7, #dashboard.dohor, #dashboard.asr {
+    background-color: #e9f77b; /* Light blue for day */
+    color: #000; /* Dark text for day */
+}
+
+#dashboard.sunset {
+    background-color: #ef8e52; /* Dark blue for night */
+    color: #fff; /* Light text for night */
+}
+
+#dashboard.day {
+    background-color: #87CEEB; /* Light blue for day */
+    color: #000; /* Dark text for day */
+}
+
+#dashboard.night, #dashboard.Ishaa {
+    background-color: #000033; /* Dark blue for night */
+    color: #fff; /* Light text for night */
+}
+
+#dashboard.night, #dashboard.Ishaa, #dashboard.night #time, #dashboard.night #date, #dashboard.night #dayCycleText {
+    color: #fff; /* White text for night */
+}
+
+.night #dayCycle {
+    background-image: url('moon.jpg'); /* Path to your image */
+}
+
+.day #dayCycle {
+    background-image: url('sun.jpg'); /* Path to your image */
+}
+
+.sunrise #dayCycle {
+    background-image: url('sunrise.jpg'); /* Path to your image */
+}
+
+.sunset #dayCycle {
+    background-image: url('sunset.jpg'); /* Path to your image */
+}
+
+.fajr #dayCycle {
+    background-image: url('fajr.jpg'); /* Path to your image */
+}
+
+.sobo7 #dayCycle {
+    background-image: url('sobo7.jpg'); /* Path to your image */
+}
+
+.dohor #dayCycle {
+    background-image: url('dohor.jpg'); /* Path to your image */
+}
+
+.asr #dayCycle {
+    background-image: url('asr.jpg'); /* Path to your image */
+}
+
+.Ishaa #dayCycle {
+    background-image: url('Ishaa.jpg'); /* Path to your image */
+}
+
+/* body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: background-color 0.5s;
+} */
+
+/* #date {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#time {
+    font-size: 25rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#dayCycle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#dayCycleText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:250px;
+    left: 0;
+    font-size: 5rem;
+} */
