@@ -13,20 +13,18 @@ body, html {
     transition: background-color 0.5s;
 }
 
-/* ... other styles ... */
-
 #date, #time {
     text-align: center;
 }
 
 #date {
     font-size: 5vw; /* Adjust font size */
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 #time {
     font-size: 25vw; /* Adjust font size */
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 #dayCycleContainer {
@@ -100,7 +98,18 @@ body, html {
     }
 }
 
-/* ... other styles ... */
+@media (max-height: 768px) {
+    #date {
+        font-size: 5vw;
+        margin-top: 5vw;
+    }
+    #time {
+        font-size: 15vw;
+    }
+    #dayCycleText {
+        font-size: 5vw;
+    }
+}
 
 #dashboard.sunrise, #dashboard.fajr, #dashboard.sobo7, #dashboard.dohor, #dashboard.asr {
     background-color: #e9f77b; /* Light blue for day */
